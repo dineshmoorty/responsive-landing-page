@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: repeat-x;
+  background-size: 100% 100vmin;
+  background-color: hsl(257, 40%, 49%);
+}
+a{
+  text-decoration: none;
+}
+.logo{
+  padding-top: 1em;
+}
+.huddle-picture{
+  padding-top: 2em;
+  width: 100%;
+}
+.details{
+  padding-top: 2em;
+  text-align: center;
+}
+h2{
+  font-weight: bold;
+  font-size: 24px;
+}
+.description{
+  padding-top: 1.3em;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  padding-bottom: 2em;
+}
+.register{
+  color: hsl(257, 40%, 49%);
+  padding: 1em 5em;
+  border-radius: 50px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.register:focus{
+  outline: none;
+}
+.register:active{
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  border: none;
+  outline: none;
+  padding-bottom: 1em;
+  cursor: pointer;
+  
+}
+.facebook{
+  width: 24px;
+  margin-right: 1em;
+  border-radius: 100%;
+}
+.facebook:active{
+  background-color: hsl(300, 69%, 71%);
+}
+.twitter{
+  width:24px;
+  margin-right: 1em;
+  border-radius: 100%;
+}
+.twitter:active{
+  
+  border: 1px solid hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+}
+.instagram{
+  width: 21px;
+}
+.instagram:active{
+  background-color: hsl(300, 69%, 71%);
+}
+footer{
+  background: none;
+}
+
+/* media query */
+
+@media only screen and (min-width:640px){
+  body{
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 100% 80vmax;
+    background-repeat: repeat-x;
+    height: 100vh;
+  }
+  .content{
+    display: flex;
+  }
+  .logo{
+    padding-top: 20px;
+    padding-left: 2em;
+    height: 70px;
+  }
+  .huddle-picture{
+   min-width: 40vwvw;
+    margin-left: 2em;
+  }
+  .details{
+    text-align: left;
+    margin-left: 2em;
+    margin-top: 4em;
+  }
+  h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    
+  }
+  .description{
+    font-size: 16px;
+    line-height: 30px;
+    width: 43vw;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width:900px) {
+  body{
+    height: 100vh;
+  }
+  .logo{
+    position: fixed;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .huddle-picture{
+    margin-top: 4em;
+    max-width: 50vw;
+  }
+  footer{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1em;
+    margin-right: 1em;
+  }
+  
+}
